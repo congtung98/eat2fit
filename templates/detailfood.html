@@ -56,29 +56,53 @@
         <div class="form">
     
             {% if food.title == 'Cơm gạo lứt, thịt gà sốt Leekumki' %}
-                <img src="../static/images/ga.jpg"><br>
+                <a href="#gal1">
+                    <img class="ava" src="../static/images/ga.jpg"><br>
+                </a>
             {% elif food.title == 'Cơm gạo lứt, thịt heo sốt Teriyaki' %}
-                <img src="../static/images/thitlon.jpg"><br>
+            <a href="#gal2">
+                <img class="ava" src="../static/images/thitlon.jpg"><br>
+            </a>               
             {% elif food.title == 'Cơm gạo lứt, trứng thịt băm cốt dừa' %}
-                <img src="../static/images/trung.jpg"><br>
+            <a href="#gal3">
+                <img class="ava" src="../static/images/trung.jpg"><br>
+            </a>              
             {% elif food.title == 'Cơm gạo lứt, cá phi lê hấp tương gừng' %}
-                <img src="../static/images/ca.jpg"><br>
+            <a href="#gal4">
+                <img class="ava" src="../static/images/ca.jpg"><br>
+            </a>               
             {% elif food.title == 'Cơm gạo lứt, thịt thăn heo viên hấp' %}
-                <img src="../static/images/thitvien.jpg"><br>
+            <a href="#gal5">
+                <img class="ava" src="../static/images/thitvien.jpg"><br>
+            </a>         
             {% elif food.title == 'Cơm gạo lứt, thịt bò kho vang đỏ' %}
-                <img src="../static/images/bo.jpg"><br>
+            <a href="#gal6">
+                <img class="ava" src="../static/images/bo.jpg"><br>
+            </a>               
             {% elif food.title == 'Cơm trắng, thịt bò xào' %}
-                <img src="../static/images/combo.jpg"><br>
+            <a href="#gal7">
+                <img class="ava" src="../static/images/combo.jpg"><br>
+            </a>               
             {% elif food.title == 'Cơm trắng, thịt gà sốt Leekumki' %}
-                <img src="../static/images/comga.jpg"><br>
+            <a href="#gal8">
+                <img class="ava" src="../static/images/comga.jpg"><br>
+            </a>            
             {% elif food.title == 'Cơm trắng, tôm hấp' %}
-                <img src="../static/images/tom.jpg"><br>
+            <a href="#gal9">
+                <img class="ava" src="../static/images/tom.jpg"><br>
+            </a>                
             {% elif food.title == 'Cơm trắng, thịt gà rang' %}
-                <img src="../static/images/comga2.jpg"><br>
+            <a href="#gal10">
+                <img class="ava" src="../static/images/comga2.jpg"><br>
+            </a>
             {% elif food.title == 'Cơm trắng, cá kho' %}
-                <img src="../static/images/comca.jpg"><br>
+            <a href="#gal11">
+                <img class="ava" src="../static/images/comca.jpg"><br>
+            </a>
             {% elif food.title == 'Cơm trắng, thịt bò bít tết' %}
-                <img src="../static/images/bittet.jpg"><br>
+            <a href="#gal12">
+                <img class="ava" src="../static/images/bittet.jpg"><br>
+            </a>
             {% endif %}
             <b>Tên món ăn: {{food.title}}</b> 
             <b>Thành phần:  {{food.resources}}</b>
@@ -88,6 +112,78 @@
             <b>Tổng calo: {{food.calo}}</b> 
             <b>Giá:  {{food.price}}</b>
         </div>
+    </div>
+    <div id="gal1" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/ga.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal2" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/thitlon.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal3" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/trung.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal4" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/ca.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal5" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/thitvien.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal6" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/bo.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal7" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/combo.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal8" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/comga.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal9" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/tom.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal10" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/comga2.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal11" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/comca.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
+    </div>
+    <div id="gal12" class="popup-effect">
+            <div class="popup">
+              <img src="../static/images/bittet.jpg" alt="Popup Image" class="img-fluid">
+              <a class="close" href="#gallery">×</a>
+            </div>
     </div>
 
     

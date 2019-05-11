@@ -30,17 +30,17 @@ div.container {
     border-radius: 5%; 
 }
 
-img {
+img.ava {
     margin-top: -100px;
     border-radius: 50%;
-}
-img {
     height: 220px;
     width: 220px;
 }
+
 b {
     font-size: 20px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
 }
 
 html {
