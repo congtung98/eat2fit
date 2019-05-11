@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/detail.css">
-    <title>Detail</title>
+    <title>{{food.title}}</title>
     <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Itim|Lobster|Montserrat|Roboto|Roboto+Slab" rel="stylesheet">
@@ -14,12 +14,12 @@
         <nav>
             <div id="logo">
             <h1>
-                <a href="index.html">E2F</a>
+                <a href="/">E2F</a>
             </h1>
             </div>
             <div class="sub-headder position-relative">
             <h6>
-                <a href="index.html">EAT 2 FIT
+                <a href="/">EAT 2 FIT
                 <br>Kitchen</a>
             </h6>
             </div>
@@ -29,12 +29,7 @@
             <li class="active">
                 <a href="/">Trang chủ</a>
             </li>
-            <li>
-                <a href="#about">Thông tin</a>
-            </li>
-            <li>
-                <a href="#service">Các món ăn</a>
-            </li>
+            
             <li>
                 <!-- First Tier Drop Down -->
                 <!--<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
@@ -47,15 +42,11 @@
                     <li><a href="recipe.html" class="drop-text">Recipes</a></li>
                 </ul>
                 </li>-->
-                <li>
-                <a href="#gallery">Nguyên liệu</a>
-                </li>
+                
                 <li>
                 <a href="/tinhcalo">Tính calo</a>
                 </li>
-                <li>
-                <a href="#contact">Liên hệ chúng tôi</a>
-                </li>
+                
             </ul>
         </nav>
         <!-- //nav -->
@@ -89,12 +80,12 @@
             {% elif food.title == 'Cơm trắng, thịt bò bít tết' %}
                 <img src="../static/images/bittet.jpg"><br>
             {% endif %}
-            <b>Tên món ăn: {{food.title}}</b> <br>
-            <b>Thành phần:  {{food.resources}}</b><br>
-            <b>Lượng carb trong món ăn:  {{food.carb}}</b><br>
-            <b>Lượng protein trong món ăn :  {{food.protein}}</b><br>
-            <b>Lượng fat trong món ăn :  {{food.fat}}</b><br>
-            <b>Tổng calo: {{food.calo}}</b> <br>
+            <b>Tên món ăn: {{food.title}}</b> 
+            <b>Thành phần:  {{food.resources}}</b>
+            <b>Lượng carb trong món ăn:  {{food.carb}}</b>
+            <b>Lượng protein trong món ăn :  {{food.protein}}</b>
+            <b>Lượng fat trong món ăn :  {{food.fat}}</b>
+            <b>Tổng calo: {{food.calo}}</b> 
             <b>Giá:  {{food.price}}</b>
         </div>
     </div>

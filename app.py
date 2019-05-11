@@ -1,5 +1,5 @@
 from flask import *
-from healthy import Myfood
+from models.healthy import Myfood
 from bson.objectid import ObjectId
 app = Flask(__name__)
 
