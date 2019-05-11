@@ -46,8 +46,11 @@ notify.addEventListener('click',function(){
     }
     
     console.log(height);
-    document.getElementById('result').innerHTML = `<h6>Lượng calo tiêu thụ hàng ngày là: ${calo} calories.</h6> 
-    <h6>Lượng calo giảm cân bạn cần là: ${calogiam} calories.</h6> 
-    <h6>Lượng calo tăng cân bạn cần là : ${calotang} calories.</h6>`;
+    document.getElementById('result').innerHTML = `<h6 style="font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;">Lượng calo tiêu thụ hàng ngày là: ${calo} calories.</h6> 
+    <h6 style="font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;">Lượng calo giảm cân bạn cần là: ${calogiam} calories.</h6> 
+    <h6 style="font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;">Lượng calo tăng cân bạn cần là : ${calotang} calories.</h6>`;
     console.log('click')
 });
