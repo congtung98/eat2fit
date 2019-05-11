@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/detail.css">
+    <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        
+        {% if food.title == 'Cơm gạo lứt, thịt gà sốt Leekumki' %}
+            <img src="../static/images/ga.jpg"><br>
+        {% elif food.title == 'Cơm gạo lứt, thịt heo sốt Teriyaki' %}
+            <img src="../static/images/thitlon.jpg"><br>
+        {% elif food.title == 'Cơm gạo lứt, trứng thịt băm cốt dừa' %}
+            <img src="../static/images/trung.jpg"><br>
+        {% elif food.title == 'Cơm gạo lứt, cá phi lê hấp tương gừng' %}
+            <img src="../static/images/ca.jpg"><br>
+        {% elif food.title == 'Cơm gạo lứt, thịt thăn heo viên hấp' %}
+            <img src="../static/images/thitvien.jpg"><br>
+        {% elif food.title == 'Cơm gạo lứt, thịt bò kho vang đỏ' %}
+            <img src="../static/images/bo.jpg"><br>
+        {% elif food.title == 'Cơm trắng, thịt bò xào' %}
+            <img src="../static/images/combo.jpg"><br>
+        {% elif food.title == 'Cơm trắng, thịt gà sốt Leekumki' %}
+            <img src="../static/images/comga.jpg"><br>
+        {% elif food.title == 'Cơm trắng, tôm hấp' %}
+            <img src="../static/images/tom.jpg"><br>
+        {% elif food.title == 'Cơm trắng, thịt gà rang' %}
+            <img src="../static/images/comga2.jpg"><br>
+        
+        {% endif %}
+        <b>Tên món ăn: {{food.title}}</b> <br>
+        <b>Thành phần:  {{food.resources}}</b><br>
+        <b>Lượng carb trong món ăn:  {{food.carb}}</b><br>
+        <b>Lượng protein trong món ăn :  {{food.protein}}</b><br>
+        <b>Lượng fat trong món ăn :  {{food.fat}}</b><br>
+        <b>Tổng calo: {{food.calo}}</b> <br>
+        <b>Giá:  {{food.price}}</b>
+    </div>
+
+</body>
+</html>
