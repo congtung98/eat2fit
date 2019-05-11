@@ -4,41 +4,102 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/detail.css">
     <title>Detail</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Itim|Lobster|Montserrat|Roboto|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <div class="form">
-        
-        {% if food.title == 'Cơm gạo lứt, thịt gà sốt Leekumki' %}
-            <img src="../static/images/ga.jpg"><br>
-        {% elif food.title == 'Cơm gạo lứt, thịt heo sốt Teriyaki' %}
-            <img src="../static/images/thitlon.jpg"><br>
-        {% elif food.title == 'Cơm gạo lứt, trứng thịt băm cốt dừa' %}
-            <img src="../static/images/trung.jpg"><br>
-        {% elif food.title == 'Cơm gạo lứt, cá phi lê hấp tương gừng' %}
-            <img src="../static/images/ca.jpg"><br>
-        {% elif food.title == 'Cơm gạo lứt, thịt thăn heo viên hấp' %}
-            <img src="../static/images/thitvien.jpg"><br>
-        {% elif food.title == 'Cơm gạo lứt, thịt bò kho vang đỏ' %}
-            <img src="../static/images/bo.jpg"><br>
-        {% elif food.title == 'Cơm trắng, thịt bò xào' %}
-            <img src="../static/images/combo.jpg"><br>
-        {% elif food.title == 'Cơm trắng, thịt gà sốt Leekumki' %}
-            <img src="../static/images/comga.jpg"><br>
-        {% elif food.title == 'Cơm trắng, tôm hấp' %}
-            <img src="../static/images/tom.jpg"><br>
-        {% elif food.title == 'Cơm trắng, thịt gà rang' %}
-            <img src="../static/images/comga2.jpg"><br>
-        
-        {% endif %}
-        <b>Tên món ăn: {{food.title}}</b> <br>
-        <b>Thành phần:  {{food.resources}}</b><br>
-        <b>Lượng carb trong món ăn:  {{food.carb}}</b><br>
-        <b>Lượng protein trong món ăn :  {{food.protein}}</b><br>
-        <b>Lượng fat trong món ăn :  {{food.fat}}</b><br>
-        <b>Tổng calo: {{food.calo}}</b> <br>
-        <b>Giá:  {{food.price}}</b>
+    <div class="headder-top">
+        <!-- nav -->
+        <nav>
+            <div id="logo">
+            <h1>
+                <a href="index.html">E2F</a>
+            </h1>
+            </div>
+            <div class="sub-headder position-relative">
+            <h6>
+                <a href="index.html">EAT 2 FIT
+                <br>Kitchen</a>
+            </h6>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop">
+            <ul class="menu mt-2">
+            <li class="active">
+                <a href="/">Trang chủ</a>
+            </li>
+            <li>
+                <a href="#about">Thông tin</a>
+            </li>
+            <li>
+                <a href="#service">Các món ăn</a>
+            </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <!--<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+                </label>
+                <a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <input type="checkbox" id="drop-2">
+                <ul>
+                    <li><a href="gallery.html" class="drop-text">Gallery</a></li>
+                    <li><a href="menu.html" class="drop-text">Menu</a></li>
+                    <li><a href="recipe.html" class="drop-text">Recipes</a></li>
+                </ul>
+                </li>-->
+                <li>
+                <a href="#gallery">Nguyên liệu</a>
+                </li>
+                <li>
+                <a href="/tinhcalo">Tính calo</a>
+                </li>
+                <li>
+                <a href="#contact">Liên hệ chúng tôi</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- //nav -->
     </div>
+                <!-- //header -->
+    <div class="container">
+        <div class="form">
+    
+            {% if food.title == 'Cơm gạo lứt, thịt gà sốt Leekumki' %}
+                <img src="../static/images/ga.jpg"><br>
+            {% elif food.title == 'Cơm gạo lứt, thịt heo sốt Teriyaki' %}
+                <img src="../static/images/thitlon.jpg"><br>
+            {% elif food.title == 'Cơm gạo lứt, trứng thịt băm cốt dừa' %}
+                <img src="../static/images/trung.jpg"><br>
+            {% elif food.title == 'Cơm gạo lứt, cá phi lê hấp tương gừng' %}
+                <img src="../static/images/ca.jpg"><br>
+            {% elif food.title == 'Cơm gạo lứt, thịt thăn heo viên hấp' %}
+                <img src="../static/images/thitvien.jpg"><br>
+            {% elif food.title == 'Cơm gạo lứt, thịt bò kho vang đỏ' %}
+                <img src="../static/images/bo.jpg"><br>
+            {% elif food.title == 'Cơm trắng, thịt bò xào' %}
+                <img src="../static/images/combo.jpg"><br>
+            {% elif food.title == 'Cơm trắng, thịt gà sốt Leekumki' %}
+                <img src="../static/images/comga.jpg"><br>
+            {% elif food.title == 'Cơm trắng, tôm hấp' %}
+                <img src="../static/images/tom.jpg"><br>
+            {% elif food.title == 'Cơm trắng, thịt gà rang' %}
+                <img src="../static/images/comga2.jpg"><br>
+            {% elif food.title == 'Cơm trắng, cá kho' %}
+                <img src="../static/images/comca.jpg"><br>
+            {% elif food.title == 'Cơm trắng, thịt bò bít tết' %}
+                <img src="../static/images/bittet.jpg"><br>
+            {% endif %}
+            <b>Tên món ăn: {{food.title}}</b> <br>
+            <b>Thành phần:  {{food.resources}}</b><br>
+            <b>Lượng carb trong món ăn:  {{food.carb}}</b><br>
+            <b>Lượng protein trong món ăn :  {{food.protein}}</b><br>
+            <b>Lượng fat trong món ăn :  {{food.fat}}</b><br>
+            <b>Tổng calo: {{food.calo}}</b> <br>
+            <b>Giá:  {{food.price}}</b>
+        </div>
+    </div>
+
+    
 
 </body>
 </html>

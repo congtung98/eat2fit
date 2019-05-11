@@ -16,25 +16,38 @@ notify.addEventListener('click',function(){
     }
     if(cuongdo == 1.2)
     {
-        rmr = parseInt(bmr) * 1.2;
+        calo = parseInt(bmr) * 1.2;
+        calotang = calo + calo * 0.2;
+        calogiam = calo - calo * 0.2;
     }
     else if(cuongdo == 1.375)
     {
-        rmr = parseInt(bmr) * 1.375;
+        calo = parseInt(bmr) * 1.375;
+        calotang = calo + calo * 0.2;
+        calogiam = calo - calo * 0.2;
     }
     else if(cuongdo == 1.45)
     {
-        rmr = parseInt(bmr) * 1.45;
+        calo = parseInt(bmr) * 1.45;
+        calotang = calo + calo * 0.2;
+        calogiam = calo - calo * 0.2;
     }
     else if(cuongdo == 1.75)
     {
-        rmr = parseInt(bmr) * 1.75;
+        calo = parseInt(bmr) * 1.75;
+        calotang = calo + calo * 0.2;
+        calogiam = calo - calo * 0.2;
     }
     else if(cuongdo == 1.95)
     {
-        rmr = parseInt(bmr) * 1.95;
+        calo = parseInt(bmr) * 1.95;
+        calotang = calo + calo * 0.2;
+        calogiam = calo - calo * 0.2;
     }
+    
     console.log(height);
-    document.getElementById('result').innerHTML = 'BMR bạn là: '+ bmr +" calories. RMR của bạn cần thiết là: "+rmr+" calories";
+    document.getElementById('result').innerHTML = `<h6>Lượng calo tiêu thụ hàng ngày là: ${calo} calories.</h6> 
+    <h6>Lượng calo giảm cân bạn cần là: ${calogiam} calories.</h6> 
+    <h6>Lượng calo tăng cân bạn cần là : ${calotang} calories.</h6>`;
     console.log('click')
 });
